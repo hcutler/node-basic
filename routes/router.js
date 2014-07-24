@@ -2,8 +2,9 @@
 var launch = function(req, res){
 	res.sendfile('./views/index.html');
 }
+
 var redirect = function (req,res){
-	res.sendfile('./views/ect.html');
+	res.sendfile('./views/secondpage.html');
 }
 
 var routes = {
