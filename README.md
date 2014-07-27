@@ -28,3 +28,5 @@ There are two files: index.ejs and secondpage.ejs. Index is generally the name o
 The other file, secondpage.ejs, provides the HTML for the second page you see, which displays your name.
 
 app.js: The main file, and the first one to be read. At the beginning, this file initializes the functionality described in the Node modules. Then "get" and "post" requests are set up that tell the app which router methods to use. The last section tells the app to run on a particular port (5000 in this case).
+
+package.json: A standardized JSON file containing information about this app. It's fairly readable, but there's info about the authors, version, repository, and versions of Node modules.

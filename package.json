@@ -1,0 +1,22 @@
+{
+	"name": "node-basic",
+	"description": "A very basic Node app created for the purpose of teaching.",
+	"version": "0.0.1",
+	"authors": [{
+		"name": "Brynn Claypoole",
+		"email": "brynn@pennapps.com"
+	},
+	{
+		"name": "Alex Hu",
+		"email": "alexhu@pennapps.com"
+	}],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/bclay/node-basic"
+	},
+	"dependencies": {
+		"express": "4.4.3",
+		"ejs": "1.0.0",
+		"body-parser": "1.5.0"
+	} 
+}
