@@ -6,11 +6,15 @@
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+	<!--This is a Javascript function!
+	You can embed it in the HTML because this is an EJS file. 
+	For all documents in the database, print out the name and status messages.-->
 	<% if (all != null){ %>
 		<%for (var i = 0; i < all.length; i++){ %>
 			<h1> Name: <%= all[i].name %> </h1>
 			<h3> Status: <%= all[i].status %> </h3>
 	<%}}%>
+	<!--Button that takes you back to the home page.-->
 	<form action="/">
 		<a href="/" class="btn btn-primary btn-large"><i class="icon-white icon-heart"></i>Home</a>
 	</form>

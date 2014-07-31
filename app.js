@@ -10,11 +10,16 @@ var bodyParser = require('body-parser');
 //create a mongoose object that we can use to connect to our database
 var mongoose = require('mongoose');
 
-
-//connect to the "test" database running locally on your computer
+//connect to the "test1" database running locally on your computer
 mongoose.connect('mongodb://localhost/test1', function(err){
-	if (err) console.log(err);
-    else console.log('DB success');
+	//if there's an error, print out the error message
+	if (err) {
+		console.log(err);
+	}
+	//if you successfully connect to the database, print on the cons
+    else {
+    	console.log('DB success');
+    }
 });
 
 //tell the application to look in the /public directory for extra files

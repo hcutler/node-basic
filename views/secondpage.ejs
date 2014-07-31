@@ -6,11 +6,15 @@
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+	<!--EJS allows you to embed Javascript in HTML with <% %> tags.
+	Display-->
 	<h1> Hello <%= name %> </h1>
 	<h3> <%= status %> </h3>
+	<!--Button goes to page that displays all information in the database-->
 	<form action="/all">
 		<a href="/all" class="btn btn-primary btn-large"><i class="icon-white icon-heart"></i>See All</a>
 	</form>
+	<!--Button goes back to the home page. Data is already stored in database.-->
 	<form action="/">
 		<a href="/" class="btn btn-primary btn-large"><i class="icon-white icon-heart"></i>Home</a>
 	</form>
