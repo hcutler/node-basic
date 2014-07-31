@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Untitled Document</title>
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<% if (all != null){ %>
+		<%for (var i = 0; i < all.length; i++){ %>
+			<h1> Name: <%= all[i].name %> </h1>
+			<h3> Status: <%= all[i].status %> </h3>
+	<%}}%>
+	<form action="/">
+		<a href="/" class="btn btn-primary btn-large"><i class="icon-white icon-heart"></i>Home</a>
+	</form>
+</body>
+</html>

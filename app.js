@@ -5,8 +5,17 @@ var express = require('express');
 var app = express();
 //create a router object that calls the router.js file
 var router = require("./routes/router.js");
-//creates the body parser
+//create the body parser
 var bodyParser = require('body-parser');
+//create a mongoose object that we can use to connect to our database
+var mongoose = require('mongoose');
+
+
+//connect to the "test" database running locally on your computer
+mongoose.connect('mongodb://localhost/test1', function(err){
+	if (err) console.log(err);
+    else console.log('DB success');
+});
 
 //tell the application to look in the /public directory for extra files
 app.use(express.static(__dirname + '/public'));
@@ -18,8 +27,9 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }))
 
 //create routes to the various pages
 app.get('/', router.launch);
-app.post('/sendname', router.send_name);
-app.get('/secondpage', router.redirect);
+app.post('/sendinfo', router.send_info);
+app.get('/display', router.redirect);
+app.get('/all', router.get_all);
 
 //run on the localhost port 5000
 var port = Number(process.env.PORT || 5000);
