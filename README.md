@@ -1,6 +1,6 @@
 node-basic
 ==========
-
+Hi, my name is Hannah.  I am editing this README file as a test.  It is 11:09 on July 31st, 2014.
 Basic Node app for app development class. Type in your name, hit the button, and see a personalized message on the second page.
 
 To run, type "node app.js" from the main folder in a command prompt.
